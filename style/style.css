@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --cor-primaria: #191970;
+    --cor-secundaria:#00CED1;
+    --cor-titulo-header:#FF0000;
+    --cor-texto-hover: #A020F0;
+    --cor-borda-hover: #00FF00;
+    --cor-botao-fundo:#000000;
+}
+
+body{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.cabecalho{
+    height: 40%;
+    background-image: url("../assets/terror_bicolor.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5vw;
+}
+
+.link_texto_titulo{
+    font-family: "Bungee",cursive;
+    font-weight: 400;
+    color:var(--cor-titulo-header);
+    text-decoration: none;
+}
+
+.link_texto_titulo:hover{
+color: var(--cor-texto-hover);
+border-style: solid;
+border:2%;
+border-radius: 15px;
+border-color: var(--cor-borda-hover);
+background-color:var(--cor-botao-fundo);
+padding: 1vw;
+}
+
+.titulo_main{
+    display: flex;
+    justify-content: center;
+}
